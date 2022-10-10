@@ -1,0 +1,680 @@
+/* General stuff */
+
+@font-face {
+    font-family:Blanka;
+    src:url('webfonts/Blanka-Regular.ttf');
+   }
+
+body {
+    margin: 0;
+    font-family: 'Work Sans';
+}
+
+ion-icon {
+    margin: 0;
+}
+
+h1 {
+    font-family: Righteous;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #56E39F;
+}
+
+h2 {
+    font-family: Righteous;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #003459;
+}
+
+h3 {
+    font-family: Righteous;
+    font-size: 1.5rem;
+    color: #003459;
+}
+
+.btn {
+    /* Positioning and sizing */
+    display: block;
+    width: 200px;
+    
+    /* Padding and margins */
+    padding: 0.5rem;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /* Text styles */
+    color: #003459;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-align: center;
+    font-family: Righteous;
+    
+    /* Border styles */
+    border-radius: 5px;
+    
+    /* Background styles */
+    background-color: #56E39F;
+}
+
+.btn:hover {
+    color: white;
+    background-color: #003459;
+}
+
+/* Navigation bar stuff */
+
+.navigation {
+    margin: 0;
+    /* Sizing */
+    width: 100%;
+    height: 10vh;
+    background-color: #003459;
+    position: fixed;
+
+    /* Avoiding icons overlap*/
+    z-index: +100;
+  
+}
+
+.nav-inner {
+        /* Flexbox stuff */
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.logo a {
+    margin: 0;
+    font-family: Blanka;
+    font-size: 2rem;
+    color: white;
+    padding: 1rem 2rem;
+    text-decoration: none;
+}
+
+.logo a:hover {
+    color: #56E39F;
+}
+
+.nav-menu {
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Work Sans';
+    padding: 0rem 2rem;
+    font-size: 1rem;
+}
+
+.nav-menu a:hover {
+    color: #56E39F;
+}
+
+#globalFooter {
+    display: flex;
+    background-color: #003459;
+    justify-content:space-between;
+    align-items:center;
+    padding: 0rem 1rem;
+}
+
+#globalFooter p {
+    font-size: 1.5rem;
+    color: white;
+}
+
+
+/* 1st section index - Hero*/
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.hero {
+   /* Sizing */
+   width: 100vw;
+   height: 100vh;
+   
+   /* Flexbox stuff */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   /* Text styles */
+   text-align: center;
+   color: white;
+   
+   /* Background stuff */
+   background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/hero.jpg');
+   background-size: cover;
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+}
+
+.hero h1 {
+    /* Text styles */
+    font-size: 3rem;
+    color: #56E39F;
+    
+    /* Margins */
+    margin-top: 0;
+    margin-bottom: 0.5em;
+}
+
+.hero p {
+    /* Text styles */
+    font-size: 2rem;
+    font-family: 'Work Sans';
+    
+    /* Margins */
+    margin: 5rem 10rem;
+    width: auto;
+}
+
+
+
+/* 2nd section index - About him*/
+
+.about {
+    /* Sizing */
+    padding: 2.5rem;
+ }
+
+.about-main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ .about-main p {
+     font-family: 'Work Sans';
+     padding: 2rem;
+     font-size: 1.7rem;
+     line-height: 1.5em;
+     text-align: center;
+     width: 60%;
+ }
+
+ .about-main img {
+    height: 400px;
+    width: 300px;
+    border-radius: 10px;
+ }
+
+
+ /* 3rd section index - Books*/
+
+ .books {
+    /* Sizing */
+
+    padding: 2rem 0rem;
+
+    /*background*/
+    background-color: #000000;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/library.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+
+ }
+
+ .books h2 {
+     color: #56E39F;
+     margin: 0rem;
+ }
+
+ .books-main {
+     display: flex;
+     flex-direction: row;    
+     flex-flow:row wrap;
+     justify-content: space-around;
+ }
+
+ .books-main a .btn {
+     margin-top: 0rem;
+ }
+
+ .book-card {
+     background-color: #56E39F;
+     padding: 1rem 1.5rem;
+     margin: 2rem 2rem;
+     margin-bottom: 0rem;
+     text-align: center;
+     border-radius: 10px;
+ }
+
+.book-card h3 {
+    font-size: 2rem;
+    font-family: 'Work Sans';
+    margin: 0;
+}
+
+ .book-card img {
+     height: 325px;
+     width: 220px;
+     border-radius: 10px;
+     margin: 1rem;
+ }
+
+ .book-card a {
+    text-decoration: none; 
+    font-family: 'Work Sans';
+    background-color: #63345E;
+    padding: 1rem;
+    margin-bottom: 10rem;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+
+ .book-card a:hover {
+     color: #56E39F;
+     background-color: #003459;
+ }
+
+  /* 4rd section index - Quote*/
+
+  .quote {
+    /* height: 90vh; */
+    padding: 2.5rem;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .quote-inner .icon-quote {
+      font-size: 8rem;
+      text-align: center;
+      color: #003459;
+      margin: 0%;
+  }
+
+  .quote-inner h2 {
+      margin: 0rem 6rem;
+  }
+
+  .quote-inner p {
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+    font-weight: bold;
+  }
+
+  /* 5th section index - Foundation*/
+
+  .movies {
+      background-color: black;
+    padding: 2.5rem;
+    /* Flexbox stuff */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .movies-inner h2 {
+    color: #56E39F;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  .movies-inner p {
+      color: white;
+      text-align: center;
+      font-weight: 300;
+      font-size: 1.2rem;
+      margin-top: 0;    
+      padding: 0 6rem;
+  }
+
+  .movies-inner iframe {
+      width: 700px;
+      height: 380px;
+  }
+
+/* 6th section index - Why*/
+
+.why {
+    padding: 2rem;
+}  
+
+.why-inner p {
+      margin: 2rem;
+      font-size: 1.5rem;
+      line-height: 1.5em;
+      text-align: center;
+  }
+
+
+/* For all the heroes that are not in index */
+
+.second-hero {
+       /* Sizing */
+   width: 100vw;
+   height: 50vh;
+   
+   /* Flexbox stuff */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   
+   /* Text styles */
+   text-align: center;
+   color: white;
+   
+   /* Background stuff */
+   background-size: cover;
+   background-position: center bottom;
+   background-repeat: no-repeat;
+   background-attachment: local;
+
+   /* Style of title */
+   color: #56E39F;
+   font-family: Righteous;
+   font-size: 2rem;
+}
+
+.second-hero p {
+    font-family: 'Work Sans';
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Work & life page */
+
+.life-work {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/life-work.jpg');
+}
+
+.biography {
+    width: 60%;
+    margin: 2rem auto;
+}
+
+.biography-inner img {
+    border-radius: 10px;
+    height: 450px;
+    width: 300px;
+    margin: 0 auto;
+}
+
+/* Books page */
+
+.books-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/library.jpg');
+    background-position: center center;
+}
+
+.library-inner .book-card {
+    margin: 2rem;
+}
+
+.library {
+    width: 100vw;
+}
+
+.library h4 {
+    text-align: center;
+    font-size: 'Work Sans';
+    color: #000000;
+    font-weight: bold;
+    margin: 0;
+    font-size: 1.5rem;
+    padding: 1rem;
+}
+
+/* Quotes page */
+
+.quotes-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/quotes.jpg');
+    background-position: center top;
+}
+
+
+        /* Quotes with white background (quote-inner-a)*/
+        .quotes-inner-a {
+            padding: 3rem;
+            background-color: #ffffff;
+        }
+
+        .quotes-inner-a .icon-quote {
+            font-size: 4rem;
+            text-align: center;
+            color: #003459;
+            margin: 0%;
+        }
+
+        .quotes-inner-a h2 {
+            margin: 0rem 6rem;
+            font-size: 2rem;
+        }
+
+        .quotes-inner-a p {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Quotes with black background (quote-inner-b)*/
+
+        .quotes-inner-b {
+            padding: 3rem;
+            background-color: #000000;
+        }
+
+        .quotes-inner-b .icon-quote {
+            font-size: 4rem;
+            text-align: center;
+            color: #56E39F;
+            margin: 0%;
+        }
+
+        .quotes-inner-b h2 {
+            margin: 0rem 6rem;
+            font-size: 2rem;
+            color: #56E39F;
+        }
+
+        .quotes-inner-b p {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #ffffff;
+        }
+
+/* Foundation Page */
+
+.foundation-hero {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('images/foundation-hero.jpg');
+    background-position: center center; 
+}
+
+.foundation-inner {
+    padding: 2.5rem;
+    display: flex;
+    flex-direction: row;    
+    flex-flow:row wrap;
+    justify-content: space-around;
+}
+
+.foundation-card {
+    border-radius: 10px;
+    background-color: black;
+    width: 300px;
+    padding-bottom: 1rem;
+    margin: 1rem;
+}
+
+.foundation-card h4 {
+    color: white;
+    text-align: center;
+}
+
+.foundation-card p {
+    color: gainsboro;
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.foundation-card img {
+    height: 200px;
+    width: 300px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.foundation-card .btn {
+    margin: 1rem 3rem;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Article pages */
+
+.article-inner {
+    padding: 10vh 0;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.article-inner h1 {
+    color: #003459;
+}
+
+.article-inner p img {
+    text-align: center;
+    width: 600px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.article-inner h5 {
+    margin: 0%;
+    font-family: Righteous;
+    font-size: 1.5rem;
+}
+
+/* Media queries to fix some stuff for mobile */
+
+@media only screen and (max-width:900px) {
+
+    .nav-inner {
+        /* Flexbox stuff */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navigation {
+        height: 20vh;
+        background-color: #003459; 
+        position: relative;  
+        width: 100vw; 
+    }
+
+
+    .hero {
+        height: 80vh;
+    }
+
+    .hero-inner h1 {
+        font-family: Righteous;
+        text-align: center;
+        font-size: 2rem;
+        margin: 3rem 0rem;
+        color: #56E39F;
+    }
+
+    .hero-inner p {
+        font-size: 1rem;
+        margin: 0rem;
+    }
+
+    .movies-inner iframe {
+        width: 100vw;
+        height: 30vh;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin: 0rem;
+    }
+
+    .about-main p {
+        font-size: 1rem;
+        padding: 0.5rem;
+        width: 100%;
+    }
+
+    .quote-inner .icon-quote {
+        font-size: 4rem;
+        text-align: center;
+        color: #003459;
+        margin: 0%;
+    }
+  
+    .quote-inner h2 {
+        margin: 0rem;
+        font-size: 2rem;
+    }
+  
+    .quote-inner p {
+      font-size: 1.5rem;
+    }
+
+    .why-inner p {
+        margin: 1rem;
+        font-size: 1rem;
+        line-height: 1.5em;
+        text-align: center;
+    }
+
+    .biography {
+        width: 95%;
+        margin: 2rem auto;
+    }
+
+    .quotes-inner-a, .quotes-inner-b {
+        padding: 1rem;
+    }
+
+    .quotes-inner-a h2, .quotes-inner-b h2 {
+        margin: 0rem;
+        font-size: 2rem;
+    }
+
+    #globalFooter {
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        padding: 0rem 1rem;
+    }
+
+    .article-inner {
+        width: 95%;
+        margin: 0 auto;
+        padding: 1rem 0;
+    }
+
+    .article-inner p img {
+        text-align: center;
+        width: 100%;
+    }
+    
+    #globalFooter p {
+        font-size: 1rem;
+    }
+  }
